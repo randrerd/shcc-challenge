@@ -11,8 +11,23 @@ const global = {
   '#__next': { display: 'flex', flexDirection: 'column', minHeight: '100vh' },
 };
 
-const colors = { brand: '#FF1A3E' };
+const colors = { brand: '#FF1A3E', secondary: '#00174f' };
 
-const CustomTheme = extendTheme({ fonts, colors, styles: { global } });
+const components = {
+  Heading: {
+    baseStyle: {
+      fontFamily: `"Heroic Condensed",-apple-system,Arial,sans-serif`,
+    },
+  },
+};
+
+const CustomTheme = extendTheme({
+  fonts,
+  colors,
+  components,
+  styles: { global },
+});
+
+export const customContainer = { base: '90%', lg: '70%' };
 
 export default CustomTheme;

@@ -9,6 +9,7 @@ const Fonts = () => (
         font-style: normal;
         font-weight: 500;
         font-display: swap;
+        font-stretch: 50% 200%;
       }
 
       @font-face {
@@ -17,6 +18,7 @@ const Fonts = () => (
         font-style: normal;
         font-weight: 700;
         font-display: swap;
+        font-stretch: 50% 200%;
       }
 
       @font-face {
@@ -25,6 +27,7 @@ const Fonts = () => (
         font-style: normal;
         font-weight: 800;
         font-display: swap;
+        font-stretch: 50% 200%;
       }
 
       @font-face {
@@ -33,6 +36,7 @@ const Fonts = () => (
         font-style: normal;
         font-weight: 900;
         font-display: swap;
+        font-stretch: 50% 200%;
       }
       `}
   />
