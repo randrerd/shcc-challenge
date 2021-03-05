@@ -38,6 +38,25 @@ const Fonts = () => (
         font-display: swap;
         font-stretch: 50% 200%;
       }
+
+      @font-face {
+        font-family: "Gill Sans";
+        src: url("/assets/fonts/gillsans.otf");
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        font-stretch: 50% 200%;
+      }
+
+      @font-face {
+        font-family: "Gill Sans";
+        src: url("/assets/fonts/gillsans-italic.otf");
+        font-style: italic;
+        font-weight: 400;
+        font-display: swap;
+        font-stretch: 50% 200%;
+      }
+
       `}
   />
 );

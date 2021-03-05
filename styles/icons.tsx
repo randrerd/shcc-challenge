@@ -16,10 +16,11 @@ export const Logo = createIcon({
 
 export const LogoSm = createIcon({
   displayName: 'logo-sm',
-  viewBox: '0 0 199.18 11.0',
+  viewBox: '0 0 50 32',
   path: [
-    <path key={0} d="M94.45 2.82h8.3v5.41h-8.3z" fill="#cc0c2f" />,
-    <path key={1} d="M86.16 2.84h8.3v5.4h-8.3z" fill="#fff" />,
+    <path key={0} d="M0 0h50v8H0zM0 24h50v8H0z" fill="#00174F" />,
+    <path key={1} d="M0 8h25v16H0z" fill="#fff" />,
+    <path key={2} d="M25 8h25v16H25z" fill="#CC0C2F" />,
   ],
 });
 

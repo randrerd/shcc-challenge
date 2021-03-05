@@ -8,10 +8,11 @@ const Picture = () => {
     <>
       <Box
         position="relative"
+        gridColumn="1/-1"
         display="grid"
         gridTemplateColumns="repeat(30, 1fr)"
         gridTemplateRows={{
-          base: 'repeat(24, 1.81rem)',
+          base: 'repeat(27, 0.8rem)',
           lg: 'repeat(24,1.8rem)',
         }}
       >
@@ -19,7 +20,7 @@ const Picture = () => {
         <GrayBox />
         <Image
           zIndex="0"
-          gridColumn="9 / -1"
+          gridColumn={{ base: '3/-1', md: '9 / -1' }}
           gridRow="1"
           ml="auto"
           src="/assets/images/tommy-denim__header-men.jpg"
@@ -29,7 +30,8 @@ const Picture = () => {
           gridRow="1"
           gridColumn="13 / span 4"
           paddingTop="109%"
-          zIndex="2"
+          zIndex={{ base: '1', xl: '2' }}
+          display={{ base: 'none', xl: 'block' }}
           src="/assets/images/guy_arm.png"
         />
         <WhiteBottomBox />
