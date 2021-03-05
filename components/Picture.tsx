@@ -12,7 +12,7 @@ const Picture = () => {
         display="grid"
         gridTemplateColumns="repeat(30, 1fr)"
         gridTemplateRows={{
-          base: 'repeat(27, 0.8rem)',
+          base: 'repeat(50, 0.8rem)',
           lg: 'repeat(24,1.8rem)',
         }}
       >

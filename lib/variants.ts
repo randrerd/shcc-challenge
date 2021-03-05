@@ -12,7 +12,7 @@ export const upperBoxAnimDesktop = {
 export const upperBoxAnim = {
   init: {},
   final: {
-    marginLeft: '40%',
+    marginLeft: '59%',
     transition: {
       duration: 1.2,
       ease: 'easeOut',
@@ -23,7 +23,8 @@ export const upperBoxAnim = {
 export const bottomBoxAnim = {
   init: {},
   final: {
-    marginLeft: '15%',
+    marginLeft: '47%',
+    width: '63%',
     transition: {
       duration: 1.2,
       ease: 'easeOut',
@@ -35,6 +36,7 @@ export const bottomBoxAnimDesktop = {
   init: {},
   final: {
     marginLeft: '100%',
+    width: '30%',
     transition: {
       duration: 1.2,
       ease: 'easeOut',
@@ -49,7 +51,7 @@ export const grayBoxAnimDesktop = {
   final: {
     opacity: 1,
     visibility: 'visible',
-    width: '4.3em',
+    width: '20%',
     marginLeft: '80%',
     transition: {
       duration: 1.2,
@@ -64,9 +66,8 @@ export const grayBoxAnim = {
   },
   final: {
     opacity: 1,
-    visibility: 'visible',
-    width: '2.1em',
-    marginLeft: '40%',
+    width: '19%',
+    marginLeft: '59%',
     transition: {
       duration: 1.2,
       ease: 'easeOut',
