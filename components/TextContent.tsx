@@ -1,5 +1,20 @@
+import {
+  bottomHeadingListAnim,
+  headingAnim,
+  headingListAnim,
+  heartAnim,
+  textAnim,
+  textStackAnim,
+} from '@/lib/variants';
 import { Heart } from '@/styles/icons';
 import { Box, Flex, Heading, Stack, Text } from '@chakra-ui/react';
+import {
+  MotionFlex,
+  MotionHeading,
+  MotionHeart,
+  MotionStack,
+  MotionText,
+} from './Motion';
 
 const heartSize = { base: '5.5rem', xl: '12.5rem' };
 
@@ -24,24 +39,56 @@ const TextContent = () => {
       position="absolute"
       color="brand"
     >
-      <Text fontWeight="700" fontSize="1.2rem" letterSpacing="2.5px">
-        24/7 LIVE.
-      </Text>
-      <Flex ml={{ base: '-10px', md: '-19px' }} align="center">
-        <Heading {...headingProps}>L</Heading>
-        <Heart fill="brand" fontSize={heartSize} width="1.6em" />
-        <Heading
-          ml="0.45rem"
-          mr={{ base: '0', xl: '3.5rem' }}
+      <Box overflow="hidden">
+        <MotionText
+          fontWeight="700"
+          fontSize="1.2rem"
+          letterSpacing="2.5px"
+          variants={textAnim}
+          initial="init"
+          animate="final"
+        >
+          24/7 LIVE.
+        </MotionText>
+      </Box>
+      <MotionFlex
+        ml={{ base: '-10px', md: '-19px' }}
+        align="center"
+        variants={headingListAnim}
+        initial="init"
+        animate="final"
+      >
+        <MotionHeading {...headingProps} variants={headingAnim}>
+          L
+        </MotionHeading>
+        <MotionHeart
+          variants={heartAnim}
+          fill="brand"
+          fontSize={heartSize}
+          width="1.2em"
+        />
+        <MotionHeading
+          ml={{ base: '0.75rem', xl: '2.37rem' }}
+          mr={{ base: '0', xl: '1.2rem' }}
           {...headingProps}
+          variants={headingAnim}
         >
           V
-        </Heading>
-        <Heading {...headingProps}>E</Heading>
-        <Heading {...headingProps}>.</Heading>
-      </Flex>
+        </MotionHeading>
+        <MotionHeading {...headingProps} variants={headingAnim}>
+          E
+        </MotionHeading>
+        <MotionHeading {...headingProps} variants={headingAnim}>
+          .
+        </MotionHeading>
+      </MotionFlex>
       <Flex>
-        <Stack mt={{ base: '10em', md: '0' }}>
+        <MotionStack
+          mt={{ base: '10em', md: '0' }}
+          variants={textStackAnim}
+          initial="init"
+          animate="final"
+        >
           <Box>
             <Heading color="secondary" {...secondaryHeadingProps}>
               SPRING
@@ -69,14 +116,44 @@ const TextContent = () => {
             Engineered for perfect form and exceptional fit -- whatever you do
             in them.
           </Text>
-        </Stack>
+        </MotionStack>
 
-        <Flex ml="-1.5em" mt={{ base: 0, xl: '-14px' }}>
-          <Heading {...headingProps}>L</Heading>
-          <Heading {...headingProps}>.</Heading>
-          <Heading {...headingProps}>A</Heading>
-          <Heading {...headingProps}>.</Heading>
-        </Flex>
+        <MotionFlex
+          ml={{ base: '-1.5em', xl: '-4.5em' }}
+          mt={{ base: 0, xl: '-14px' }}
+          variants={bottomHeadingListAnim}
+          initial="init"
+          animate="final"
+        >
+          <MotionHeading
+            {...headingProps}
+            variants={headingAnim}
+            letterSpacing="22px"
+          >
+            L
+          </MotionHeading>
+          <MotionHeading
+            {...headingProps}
+            variants={headingAnim}
+            letterSpacing="22px"
+          >
+            .
+          </MotionHeading>
+          <MotionHeading
+            {...headingProps}
+            variants={headingAnim}
+            letterSpacing="22px"
+          >
+            A
+          </MotionHeading>
+          <MotionHeading
+            {...headingProps}
+            variants={headingAnim}
+            letterSpacing="22px"
+          >
+            .
+          </MotionHeading>
+        </MotionFlex>
       </Flex>
     </Box>
   );
