@@ -127,6 +127,8 @@ const TextContent = () => {
         <MotionFlex
           ml={{ base: '5.5em', xl: '9em' }}
           mt={{ base: 0, xl: '-20px' }}
+          visibility="hidden"
+          opacity="0"
           variants={bottomHeadingListAnim}
           initial="init"
           animate="final"

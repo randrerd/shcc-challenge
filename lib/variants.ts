@@ -115,10 +115,9 @@ export const headingListAnim = {
 };
 
 export const bottomHeadingListAnim = {
-  init: {
-    opacity: 0,
-  },
+  init: {},
   final: {
+    visibility: 'visible',
     opacity: 1,
     transition: {
       delayChildren: 0.65,
