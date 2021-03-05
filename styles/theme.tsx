@@ -28,6 +28,6 @@ const CustomTheme = extendTheme({
   styles: { global },
 });
 
-export const customContainer = { base: '90%', lg: '62%' };
+export const customContainer = { base: '90%', lg: '65%' };
 
 export default CustomTheme;

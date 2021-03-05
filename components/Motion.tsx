@@ -15,7 +15,7 @@ type Props = FunctionComponent<any>;
 
 type Ref = ChakraComponent<'div', {}>;
 
-export const MotionBox = motion.custom(
+export const MotionBox = motion(
   forwardRef<Ref, Props>((props, ref) => {
     const chakraProps = Object.fromEntries(
       Object.entries(props).filter(([key]) => !isValidMotionProp(key))
@@ -24,7 +24,7 @@ export const MotionBox = motion.custom(
   })
 );
 
-export const MotionStack = motion.custom(
+export const MotionStack = motion(
   forwardRef<Ref, Props>((props, ref) => {
     const chakraProps = Object.fromEntries(
       Object.entries(props).filter(([key]) => !isValidMotionProp(key))
@@ -33,7 +33,7 @@ export const MotionStack = motion.custom(
   })
 );
 
-export const MotionFlex = motion.custom(
+export const MotionFlex = motion(
   forwardRef<Ref, Props>((props, ref) => {
     const chakraProps = Object.fromEntries(
       Object.entries(props).filter(([key]) => !isValidMotionProp(key))
@@ -42,7 +42,7 @@ export const MotionFlex = motion.custom(
   })
 );
 
-export const MotionHeading = motion.custom(
+export const MotionHeading = motion(
   forwardRef<Ref, Props>((props, ref) => {
     const chakraProps = Object.fromEntries(
       Object.entries(props).filter(([key]) => !isValidMotionProp(key))
@@ -51,7 +51,7 @@ export const MotionHeading = motion.custom(
   })
 );
 
-export const MotionHeart = motion.custom(
+export const MotionHeart = motion(
   forwardRef<Ref, Props>((props, ref) => {
     const chakraProps = Object.fromEntries(
       Object.entries(props).filter(([key]) => !isValidMotionProp(key))
@@ -60,7 +60,7 @@ export const MotionHeart = motion.custom(
   })
 );
 
-export const MotionText = motion.custom(
+export const MotionText = motion(
   forwardRef<Ref, Props>((props, ref) => {
     const chakraProps = Object.fromEntries(
       Object.entries(props).filter(([key]) => !isValidMotionProp(key))
