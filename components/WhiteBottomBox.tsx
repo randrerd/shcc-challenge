@@ -30,7 +30,7 @@ const WhiteBottomBox = () => {
       position="absolute"
       width="full"
       minHeight="100%"
-      gridRow="13/-1"
+      gridRow="9/-1"
       variants={isDesktopOrLaptop ? bottomBoxAnimDesktop : bottomBoxAnim}
       initial="init"
       animate="final"

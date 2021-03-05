@@ -1,7 +1,7 @@
 export const upperBoxAnimDesktop = {
   init: {},
   final: {
-    marginLeft: '80%',
+    marginLeft: '85%',
     transition: {
       duration: 1.2,
       ease: 'easeOut',
@@ -51,8 +51,8 @@ export const grayBoxAnimDesktop = {
   final: {
     opacity: 1,
     visibility: 'visible',
-    width: '20%',
-    marginLeft: '80%',
+    width: '15%',
+    marginLeft: '85%',
     transition: {
       duration: 1.2,
       ease: 'easeOut',

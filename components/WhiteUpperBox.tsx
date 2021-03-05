@@ -25,7 +25,7 @@ const WhiteUpperBox = () => {
 
   return (
     <MotionBox
-      gridRow="1/13"
+      gridRow="1/15"
       gridColumn="19/-1"
       bg="white"
       minHeight="100%"
