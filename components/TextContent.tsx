@@ -88,7 +88,7 @@ const TextContent = () => {
           variants={textStackAnim}
           initial="init"
           animate="final"
-          background={{ sm: '#f4f4f4c7', md: 'initial' }}
+          background={{ sm: '#edf2f7b5', md: 'initial' }}
           padding={{ sm: '1em', md: 'initial' }}
           borderRadius={{ sm: '2px', md: 'initial' }}
         >
