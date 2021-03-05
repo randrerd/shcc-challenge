@@ -101,10 +101,9 @@ export const textStackAnim = {
 };
 
 export const headingListAnim = {
-  init: {
-    opacity: 0,
-  },
+  init: {},
   final: {
+    visibility: 'visible',
     opacity: 1,
     transition: {
       delayChildren: 0.25,

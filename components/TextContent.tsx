@@ -53,6 +53,8 @@ const TextContent = () => {
       <MotionFlex
         ml={{ base: '-10px', md: '-19px' }}
         align="center"
+        visibility="hidden"
+        opacity="0"
         variants={headingListAnim}
         initial="init"
         animate="final"
