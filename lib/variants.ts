@@ -5,7 +5,7 @@ export const upperBoxAnimDesktop = {
   final: {
     marginLeft: '85%',
     transition: {
-      duration: 1.2,
+      duration: 0.7,
       ease: 'easeOut',
     },
   },
@@ -16,7 +16,7 @@ export const upperBoxAnim = {
   final: {
     marginLeft: '59%',
     transition: {
-      duration: 1.2,
+      duration: 0.7,
       ease: 'easeOut',
     },
   },
@@ -28,7 +28,7 @@ export const bottomBoxAnim = {
     marginLeft: '47%',
     width: '63%',
     transition: {
-      duration: 1.2,
+      duration: 0.7,
       ease: 'easeOut',
     },
   },
@@ -40,7 +40,7 @@ export const bottomBoxAnimDesktop = {
     marginLeft: '100%',
     width: '30%',
     transition: {
-      duration: 1.2,
+      duration: 0.7,
       ease: 'easeOut',
     },
   },
@@ -56,7 +56,7 @@ export const grayBoxAnimDesktop = {
     width: '15%',
     marginLeft: '85%',
     transition: {
-      duration: 1.2,
+      duration: 0.7,
       ease: 'easeOut',
     },
   },
@@ -71,7 +71,7 @@ export const grayBoxAnim = {
     width: '19%',
     marginLeft: '59%',
     transition: {
-      duration: 1.2,
+      duration: 0.7,
       ease: 'easeOut',
     },
   },
@@ -81,7 +81,7 @@ export const grayBoxAnim = {
 
 export const textAnim = {
   init: { y: 100 },
-  final: { y: 0, transition: { delay: 0.2, duration: 1 } },
+  final: { y: 0, transition: { delay: 0.6, duration: 1 } },
 };
 
 export const textStackAnim = {
@@ -90,7 +90,7 @@ export const textStackAnim = {
     opacity: 1,
     visibility: 'visible',
     transition: {
-      duration: 1.5,
+      duration: 0.7,
       ease: 'easeOut',
       delay: 0.05,
     },
@@ -103,10 +103,9 @@ export const headingListAnim = {
     visibility: 'visible',
     opacity: 1,
     transition: {
-      delayChildren: 0.25,
+      delayChildren: 0.3,
       staggerChildren: 0.1,
-      duration: 4,
-      type: 'spring',
+      // duration: 2.2,
     },
   },
 };
@@ -119,8 +118,7 @@ export const bottomHeadingListAnim = {
     transition: {
       delayChildren: 0.65,
       staggerChildren: 0.1,
-      duration: 4,
-      type: 'spring',
+      // duration: 2.2,
     },
   },
 };
@@ -133,11 +131,12 @@ export const headingAnim = {
   final: {
     opacity: 1,
     y: 0,
+    transition: { y: { duration: 0.75, type: 'tween' } },
   },
 };
 
 export const heartAnim = {
-  init: { opacity: 0, y: 15 },
+  init: { opacity: 0, y: 50 },
   final: {
     opacity: 1,
     y: 0,
@@ -152,8 +151,9 @@ export const heartAnim = {
       '#00174f',
       '#FF1A3E',
     ],
-    x: [0, 8, 0, 0, 0, 8, 0, 8, 0],
+    x: [0, 10, 0, 0, 0, 10, 0, 10, 0],
     transition: {
+      y: { duration: 0.75, type: 'tween' },
       fill: {
         repeat: 1,
         repeatType: 'loop',

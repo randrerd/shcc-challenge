@@ -7,6 +7,9 @@ import Header from '@/components/Header';
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>De Nieuwste Looks | Tommy Hilfiger</title>
+      </Head>
       <Header />
       <Main />
     </>
