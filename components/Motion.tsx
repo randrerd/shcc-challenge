@@ -2,6 +2,7 @@ import { Heart } from '@/styles/icons';
 import {
   Box,
   ChakraComponent,
+  ChakraProps,
   Flex,
   forwardRef,
   Heading,
@@ -11,12 +12,12 @@ import {
 import { motion, isValidMotionProp } from 'framer-motion';
 import { FunctionComponent } from 'react';
 
-type Props = FunctionComponent<any>;
+type Props = FunctionComponent<ChakraProps>;
 
 type Ref = ChakraComponent<'div', {}>;
 
 export const MotionBox = motion(
-  forwardRef<Ref, Props>((props, ref) => {
+  forwardRef<Props, Ref>((props, ref) => {
     const chakraProps = Object.fromEntries(
       Object.entries(props).filter(([key]) => !isValidMotionProp(key))
     );

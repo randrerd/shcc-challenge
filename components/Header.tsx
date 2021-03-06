@@ -9,7 +9,7 @@ import {
   Link,
   Input,
 } from '@chakra-ui/react';
-import { HamburgerIcon, SearchIcon } from '@chakra-ui/icons';
+import { CloseIcon, HamburgerIcon, SearchIcon } from '@chakra-ui/icons';
 import { Logo, LogoSm } from '@/styles/icons';
 import { MdShoppingBasket } from 'react-icons/md';
 import { customContainer } from '@/styles/theme';
@@ -41,11 +41,12 @@ const Header = () => {
       ? {
           flexDirection: { base: 'column', md: 'row' },
           background: { base: 'white', md: 'none' },
-          left: { base: '-12px', md: 'initial' },
+          left: { base: '-2%', md: 'initial' },
           top: { base: '3.75rem', md: 'initial' },
           fontSize: { base: '1rem', md: 'inherit' },
           height: { base: '60vh', md: 'initial' },
-          maxWidth: { base: '500px', md: 'auto' },
+          maxWidth: { base: '105%', md: 'auto' },
+          padding: '2em',
           opacity: 1,
           visibility: 'visible',
         }
@@ -118,13 +119,25 @@ const Header = () => {
           m="0 auto"
           position="relative"
         >
-          <HamburgerIcon
-            cursor="pointer"
-            onClick={onIsNavShowing}
-            fontSize="1.5rem"
-            color="secondary"
-            display={{ base: 'block', md: 'none' }}
-          />
+          {!isNavShowing ? (
+            <HamburgerIcon
+              cursor="pointer"
+              onClick={onIsNavShowing}
+              fontSize="1.5rem"
+              color="secondary"
+              display={{ base: 'block', md: 'none' }}
+            />
+          ) : (
+            <CloseIcon
+              fontSize="1rem"
+              width="1.38em"
+              height="1.5em"
+              cursor="pointer"
+              color="secondary"
+              onClick={onIsNavShowing}
+            />
+          )}
+
           <LogoSm
             margin="0 auto"
             width="25px"
@@ -184,13 +197,14 @@ const Header = () => {
           </Flex>
           <Flex width={{ base: 'auto', md: '23%' }} justifyContent="flex-end">
             <Input
-              height="1.2rem"
               width="75%"
               fontSize="1rem"
               placeholder="Search"
               variant="outline"
               borderRadius={0}
               display={{ base: 'none', md: 'block' }}
+              py="0.5rem"
+              height="1.7rem"
             />
             <SearchIcon
               color="secondary"

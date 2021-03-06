@@ -6,7 +6,7 @@ import {
   textAnim,
   textStackAnim,
 } from '@/lib/variants';
-import { Box, Flex, Heading, Text } from '@chakra-ui/react';
+import { Box, Flex, Heading, Stack, Text } from '@chakra-ui/react';
 import {
   MotionFlex,
   MotionHeading,
@@ -87,6 +87,8 @@ const TextContent = () => {
         <MotionStack
           mt={{ base: '10em', md: '0' }}
           width={{ base: '41%', md: '25%' }}
+          visibility="hidden"
+          opacity="0"
           variants={textStackAnim}
           initial="init"
           animate="final"
@@ -100,7 +102,7 @@ const TextContent = () => {
             </Heading>
             <Heading {...secondaryHeadingProps}>2017</Heading>
           </Box>
-          <Box>
+          <Stack>
             <Text
               fontSize="1rem"
               // width="45%"
@@ -121,7 +123,7 @@ const TextContent = () => {
               Engineered for perfect form and exceptional fit -- whatever you do
               in them.
             </Text>
-          </Box>
+          </Stack>
         </MotionStack>
 
         <MotionFlex

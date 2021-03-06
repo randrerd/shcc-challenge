@@ -85,10 +85,7 @@ export const textAnim = {
 };
 
 export const textStackAnim = {
-  init: {
-    opacity: 0,
-    visibility: 'hidden',
-  },
+  init: {},
   final: {
     opacity: 1,
     visibility: 'visible',
