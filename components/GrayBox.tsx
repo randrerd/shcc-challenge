@@ -10,7 +10,7 @@ const GrayBox = () => {
   return (
     <MotionBox
       position="absolute"
-      zIndex="1"
+      zIndex="2"
       gridRow={{ base: '17/20', xl: '13/15' }}
       gridColumn="19"
       bg="gray.100"

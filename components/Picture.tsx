@@ -19,7 +19,7 @@ const Picture = () => {
         <WhiteUpperBox />
         <GrayBox />
         <Image
-          zIndex="0"
+          zIndex="1"
           gridColumn={{ base: '3/-1', md: '9 / -1' }}
           gridRow="1"
           ml="auto"
@@ -30,7 +30,7 @@ const Picture = () => {
           gridRow="1"
           gridColumn="13 / span 4"
           paddingTop="109%"
-          zIndex={{ base: '1', xl: '2' }}
+          zIndex={{ base: '1', xl: '3' }}
           display={{ base: 'none', xl: 'block' }}
           src="/assets/images/guy_arm.png"
         />

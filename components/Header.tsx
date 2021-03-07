@@ -68,6 +68,7 @@ const Header = () => {
 
   return (
     <Box
+      as="header"
       color="gray.600"
       fontFamily="Roboto,-apple-system,Arial,sans-serif"
       fontSize="0.65rem"

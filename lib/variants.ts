@@ -175,3 +175,36 @@ export const heartAnim = {
     },
   },
 };
+
+//PLAYER ANIMATIONS
+
+export const buttonBoxAnim = {
+  init: { scale: 1, opacity: 1 },
+  tap: { opacity: 0.8 },
+  hide: { scale: 0.4, opacity: 0, transition: { duration: 0.5 } },
+};
+
+export const outerCircleAnim = {
+  init: {},
+  hover: {
+    // width: '0px',
+    // height: '0px',
+    // top: '35px',
+    // left: '65px',
+    scale: 0,
+    transition: { duration: 0.6 },
+  },
+};
+
+export const transparentCircleAnim = {
+  init: {},
+  hover: {
+    // width: '0px',
+    // height: '0px',
+    // top: '35px',
+    // left: '65px',
+    scale: 2,
+    opacity: 0.6,
+    transition: { duration: 0.6 },
+  },
+};

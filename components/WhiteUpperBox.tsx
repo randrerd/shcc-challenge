@@ -13,7 +13,7 @@ const WhiteUpperBox = () => {
       gridColumn="19/-1"
       bg="white"
       minHeight="100%"
-      zIndex="1"
+      zIndex="2"
       variants={isDesktopOrLaptop ? upperBoxAnimDesktop : upperBoxAnim}
       initial="init"
       animate="final"

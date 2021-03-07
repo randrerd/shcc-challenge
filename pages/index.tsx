@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Main from '@/components/Main';
 import { isMobile, isBrowser } from 'react-device-detect';
 import Header from '@/components/Header';
+import Player from '@/components/Player';
 
 export default function Home() {
   return (

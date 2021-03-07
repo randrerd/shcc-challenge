@@ -3,6 +3,8 @@ import {
   Box,
   ChakraComponent,
   ChakraProps,
+  Circle,
+  CircularProgress,
   Flex,
   forwardRef,
   Heading,
@@ -67,5 +69,14 @@ export const MotionText = motion(
       Object.entries(props).filter(([key]) => !isValidMotionProp(key))
     );
     return <Text ref={ref} {...chakraProps} />;
+  })
+);
+
+export const MotionCircle = motion(
+  forwardRef<Props, Ref>((props, ref) => {
+    const chakraProps = Object.fromEntries(
+      Object.entries(props).filter(([key]) => !isValidMotionProp(key))
+    );
+    return <Circle ref={ref} {...chakraProps} />;
   })
 );
