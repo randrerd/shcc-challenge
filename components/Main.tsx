@@ -7,6 +7,7 @@ import TextContent from './TextContent';
 const Main = () => {
   return (
     <Box
+      as="main"
       position="relative"
       pt="2.5em"
       width={customContainer}

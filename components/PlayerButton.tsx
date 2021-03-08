@@ -19,7 +19,7 @@ interface IProps {
     loaded: number;
     loadedSeconds: number;
   };
-  onPlayerHover: boolean;
+  onPlayerMouseEnter: boolean;
 }
 
 const PlayerButton = (props: IProps) => {
@@ -28,39 +28,37 @@ const PlayerButton = (props: IProps) => {
     onPlaying,
     onSetPlaying,
     onProgress,
-    onPlayerHover,
+    onPlayerMouseEnter,
   } = props;
 
   const controls = useAnimation();
   const handlePlay = () => {
     onSetPlaying((p) => (!p ? true : false));
-    controls.start('hide');
   };
 
   useEffect(() => {
-    controls.start('init');
-  }, [onPlayerHover]);
+    if (!onPlayerMouseEnter && onPlaying) {
+      controls.start('hide');
+    } else controls.start('show');
+
+    return controls.stop;
+  }, [onPlayerMouseEnter]);
 
   return (
     <MotionBox
       position="absolute"
       cursor="pointer"
-      gridColumn="5/7"
-      gridRow="5/5"
-      width="100%"
-      display="grid"
+      display="flex"
       justifyContent="center"
-      gridTemplateColumns="repeat(15,5px)"
-      gridTemplateRows="repeat(15,5px)"
+      alignItems="center"
       variants={buttonBoxAnim}
       whileHover="hover"
       animate={controls}
       onClick={handlePlay}
     >
+      <Box />
       <CircularProgress
-        visibility="visible"
-        gridColumn="1/-1"
-        gridRow="1/-1"
+        opacity={!onPlaying ? '1' : '0'}
         trackColor="transparent"
         color="brand"
         min={0}
@@ -68,8 +66,7 @@ const PlayerButton = (props: IProps) => {
         value={onProgress.playedSeconds}
         thickness="3px"
         size="100px"
-        bottom="12px"
-        right="13px"
+        transition="all 0.5s ease"
       />
       <MotionCircle
         variants={outerCircleAnim}
@@ -78,35 +75,28 @@ const PlayerButton = (props: IProps) => {
         background="transparent"
         border="3px solid"
         borderColor="brand"
-        top="-2px"
-        left="23px"
-        width="80px"
-        height="80px"
+        width="97.5px"
+        height="97.5px"
+        visibility={!onProgress.playedSeconds ? 'visible' : 'hidden'}
       />
       <Circle
         position="absolute"
         width="35px"
         height="35px"
         background="brand"
-        gridColumn="5"
-        gridRow="5"
         color="white"
-        fontSize="0.5rem"
+        fontSize="0.35rem"
         zIndex="3"
       >
-        ►
+        {!onPlaying ? '►' : '❚❚'}
       </Circle>
       <MotionCircle
         variants={transparentCircleAnim}
         position="absolute"
         background="brand"
         opacity="0"
-        top="21px"
-        left="49px"
-        width="30px"
-        height="30px"
-        color="white"
-        fontSize="0.5rem"
+        width="35px"
+        height="35px"
         zIndex="2"
       />
     </MotionBox>

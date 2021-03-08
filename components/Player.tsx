@@ -1,7 +1,10 @@
 import { useState } from 'react';
-import { Box } from '@chakra-ui/layout';
+import { Box, Flex } from '@chakra-ui/layout';
 import ReactPlayer from 'react-player';
 import PlayerButton from './PlayerButton';
+import { MotionBox } from './Motion';
+import { useAnimation } from 'framer-motion';
+import { playerOpacityAnim } from '@/lib/variants';
 
 const Player = () => {
   const [onDuration, onSetDuration] = useState<number>(0);
@@ -13,22 +16,35 @@ const Player = () => {
     loadedSeconds: number;
   }>({ played: 0, playedSeconds: 0, loaded: 0, loadedSeconds: 0 });
   const [onMouseEnter, setOnMouseEnter] = useState<boolean>(false);
-  const [onMouseLeave, setOnMouseLeave] = useState<boolean>(false);
+
+  const controls = useAnimation();
 
   const handleMouseEnter = () => {
-    setOnMouseEnter((s) => (!s ? true : false));
+    setOnMouseEnter(true);
+  };
+
+  const handleMouseLeave = () => {
+    setOnMouseEnter(false);
   };
 
   return (
-    <Box
+    <Flex
       position="absolute"
       gridColumn={{ base: '1', xl: '4' }}
       gridRow={{ base: '14', xl: '18' }}
-      display="grid"
-      gridTemplateRows="repeat(10,1fr)"
-      gridTemplateColumns="repeat(10,1fr)"
       onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      alignItems="center"
+      justifyContent="center"
     >
+      <MotionBox
+        boxSize="100%"
+        background="gray.700"
+        opacity="0.4"
+        position="absolute"
+        variants={playerOpacityAnim}
+        animate={controls}
+      />
       <ReactPlayer
         width="initial"
         height="initial"
@@ -37,15 +53,17 @@ const Player = () => {
         onDuration={(duration) => onSetDuration(duration)}
         playing={onPlaying}
         onProgress={(state) => setOnProgress(state)}
+        onPlay={() => controls.start('playing')}
+        onPause={() => controls.start('paused')}
       />
       <PlayerButton
         duration={onDuration}
         onSetPlaying={onSetPlaying}
         onPlaying={onPlaying}
         onProgress={onProgress}
-        onPlayerHover={onMouseEnter}
+        onPlayerMouseEnter={onMouseEnter}
       />
-    </Box>
+    </Flex>
   );
 };
 
