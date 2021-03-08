@@ -105,7 +105,6 @@ const TextContent = () => {
           <Stack>
             <Text
               fontSize="1rem"
-              // width="45%"
               color="secondary"
               letterSpacing="2.5px"
               fontWeight="600"
@@ -116,7 +115,6 @@ const TextContent = () => {
             <Text
               fontFamily={`"Gill Sans",-apple-system,Arial,sans-serif`}
               lineHeight="1.2"
-              // width={{ base: '34%', xl: '47%' }}
               fontSize="0.8rem"
               color="secondary"
             >
