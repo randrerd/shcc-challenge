@@ -33,7 +33,7 @@ const TextContent = () => {
   return (
     <Box
       fontFamily="Heroic Condensed, Arial, sans-serif"
-      pt="6.85em"
+      pt="4em"
       zIndex="2"
       position="absolute"
       color="brand"
@@ -109,6 +109,7 @@ const TextContent = () => {
               letterSpacing="2.5px"
               fontWeight="600"
               lineHeight="1"
+              width={{ xl: '60%' }}
             >
               WITH ANWAR HADID & SOPHIA RICHIE
             </Text>
@@ -117,8 +118,9 @@ const TextContent = () => {
               lineHeight="1.2"
               fontSize="0.8rem"
               color="secondary"
+              width={{ xl: '85%' }}
             >
-              Engineered for perfect form and exceptional fit -- whatever you do
+              Engineered for perfect form and exceptional fit — whatever you do
               in them.
             </Text>
           </Stack>
