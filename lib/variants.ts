@@ -1,9 +1,31 @@
 //BOX ANIMATIONS!
 
-export const upperBoxAnimDesktop = {
+export const upperBoxAnimXl = {
   init: {},
   final: {
     marginLeft: '85%',
+    transition: {
+      duration: 0.7,
+      ease: 'easeOut',
+    },
+  },
+};
+
+export const upperBoxAnimMd = {
+  init: {},
+  final: {
+    marginLeft: '85%',
+    transition: {
+      duration: 0.7,
+      ease: 'easeOut',
+    },
+  },
+};
+
+export const upperBoxAnimSm = {
+  init: {},
+  final: {
+    marginLeft: '75%',
     transition: {
       duration: 0.7,
       ease: 'easeOut',
@@ -15,6 +37,67 @@ export const upperBoxAnim = {
   init: {},
   final: {
     marginLeft: '59%',
+    transition: {
+      duration: 0.7,
+      ease: 'easeOut',
+    },
+  },
+};
+
+export const grayBoxAnim = {
+  init: {
+    opacity: 0,
+  },
+  final: {
+    opacity: 1,
+    width: '41%',
+    marginLeft: '59%',
+    transition: {
+      duration: 0.7,
+      ease: 'easeOut',
+    },
+  },
+};
+
+export const grayBoxAnimSm = {
+  init: {
+    opacity: 0,
+  },
+  final: {
+    opacity: 1,
+    width: '25%',
+    marginLeft: '75%',
+    transition: {
+      duration: 0.7,
+      ease: 'easeOut',
+    },
+  },
+};
+
+export const grayBoxAnimMd = {
+  init: {
+    opacity: 0,
+  },
+  final: {
+    opacity: 1,
+    width: '15%',
+    marginLeft: '85%',
+    transition: {
+      duration: 0.7,
+      ease: 'easeOut',
+    },
+  },
+};
+
+export const grayBoxAnimXl = {
+  init: {
+    opacity: 0,
+  },
+  final: {
+    opacity: 1,
+    visibility: 'visible',
+    width: '15%',
+    marginLeft: '85%',
     transition: {
       duration: 0.7,
       ease: 'easeOut',
@@ -34,7 +117,7 @@ export const bottomBoxAnim = {
   },
 };
 
-export const bottomBoxAnimDesktop = {
+export const bottomBoxAnimSm = {
   init: {},
   final: {
     marginLeft: '100%',
@@ -46,15 +129,11 @@ export const bottomBoxAnimDesktop = {
   },
 };
 
-export const grayBoxAnimDesktop = {
-  init: {
-    opacity: 0,
-  },
+export const bottomBoxAnimMd = {
+  init: {},
   final: {
-    opacity: 1,
-    visibility: 'visible',
-    width: '15%',
-    marginLeft: '85%',
+    marginLeft: '100%',
+    width: '30%',
     transition: {
       duration: 0.7,
       ease: 'easeOut',
@@ -62,14 +141,11 @@ export const grayBoxAnimDesktop = {
   },
 };
 
-export const grayBoxAnim = {
-  init: {
-    opacity: 0,
-  },
+export const bottomBoxAnimXl = {
+  init: {},
   final: {
-    opacity: 1,
-    width: '19%',
-    marginLeft: '59%',
+    marginLeft: '100%',
+    width: '30%',
     transition: {
       duration: 0.7,
       ease: 'easeOut',
