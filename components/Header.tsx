@@ -78,6 +78,7 @@ const Header = () => {
         justifyContent="space-between"
         align="center"
         width={customContainer}
+        maxWidth="1011px"
         m="0 auto"
         p="0.5em 0"
       >
@@ -114,6 +115,7 @@ const Header = () => {
       <Flex borderY="solid" borderColor="gray.300">
         <Flex
           width={customContainer}
+          maxWidth="1011px"
           py="1em"
           alignItems="center"
           justifyContent="space-between"

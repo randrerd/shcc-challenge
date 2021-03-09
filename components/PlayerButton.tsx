@@ -133,7 +133,7 @@ const PlayerButton = (props: IProps) => {
           //      animate={itemControls}
         />
       </MotionBox>
-      <Box cursor="pointer" mt="9em" position="absolute" overflow="hidden">
+      <Box cursor="pointer" mt="14%" position="absolute" overflow="hidden">
         <Text
           color="white"
           fontSize="0.85em"

@@ -11,6 +11,7 @@ const Main = () => {
       position="relative"
       pt="2.5em"
       width={customContainer}
+      maxWidth="1011px"
       margin="0 auto"
     >
       <TextContent />

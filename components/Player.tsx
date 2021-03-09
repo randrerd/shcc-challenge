@@ -33,6 +33,7 @@ const Player = () => {
       as="section"
       margin="0 auto"
       width={customContainer}
+      maxWidth="1011px"
       py={{ base: '3.5em', md: '0' }}
     >
       <Flex

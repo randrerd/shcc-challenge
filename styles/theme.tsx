@@ -1,4 +1,13 @@
 import { extendTheme } from '@chakra-ui/react';
+import { createBreakpoints } from '@chakra-ui/theme-tools';
+
+const breakpoints = createBreakpoints({
+  sm: '30em',
+  md: '48em',
+  lg: '62em',
+  xl: '82em',
+  '2xl': '96em',
+});
 
 const fonts = { body: `"Heroic Condensed",-apple-system,Arial,sans-serif` };
 
@@ -22,12 +31,13 @@ const components = {
 };
 
 const CustomTheme = extendTheme({
+  breakpoints,
   fonts,
   colors,
   components,
   styles: { global },
 });
 
-export const customContainer = { base: '90%', lg: '65%' };
+export const customContainer = { base: '90%', xl: '65%' };
 
 export default CustomTheme;
