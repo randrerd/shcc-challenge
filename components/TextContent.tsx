@@ -44,6 +44,7 @@ const TextContent = () => {
           fontWeight="700"
           fontSize="1.2rem"
           letterSpacing="2.5px"
+          opacity={0}
           variants={textAnim}
           initial="init"
           animate="final"

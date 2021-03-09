@@ -2,7 +2,7 @@ import { useState } from 'react';
 import ReactPlayer from 'react-player';
 import useScroll from '@/lib/useScroll';
 
-import { Box, Flex } from '@chakra-ui/layout';
+import { Box } from '@chakra-ui/layout';
 import { customContainer } from '@/styles/theme';
 
 import PlayerButton from './PlayerButton';
@@ -77,8 +77,6 @@ const Player = () => {
           onDuration={(duration) => onSetDuration(duration)}
           playing={onPlaying}
           onProgress={(state) => setOnProgress(state)}
-          //       onPlay={() => controls.start('playing')}
-          //      onPause={() => controls.start('paused')}
         />
         <PlayerButton
           duration={onDuration}

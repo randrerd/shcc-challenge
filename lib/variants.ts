@@ -208,8 +208,8 @@ export const playerGridItem2Anim = {
 //TEXT ANIMATIONS!
 
 export const textAnim = {
-  init: { y: 100 },
-  final: { y: 0, transition: { delay: 0.6, duration: 1 } },
+  init: { y: 100, opacity: 0 },
+  final: { y: 0, opacity: 1, transition: { delay: 0.6, duration: 1 } },
 };
 
 export const textStackAnim = {
