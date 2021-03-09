@@ -289,7 +289,7 @@ export const transparentCircleAnim = {
   },
   hover: {
     scale: 1.8,
-    opacity: 0.6,
+    opacity: 0.5,
     transition: { duration: 0.6 },
   },
 };
