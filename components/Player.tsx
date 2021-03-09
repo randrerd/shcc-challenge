@@ -1,12 +1,14 @@
 import { useState } from 'react';
-import { Box, Flex } from '@chakra-ui/layout';
 import ReactPlayer from 'react-player';
-import PlayerButton from './PlayerButton';
-import { MotionBox } from './Motion';
-import { useAnimation } from 'framer-motion';
-import { playerOpacityAnim } from '@/lib/variants';
+import useScroll from '@/lib/useScroll';
+
+import { Box, Flex } from '@chakra-ui/layout';
 import { customContainer } from '@/styles/theme';
+
+import PlayerButton from './PlayerButton';
 import MovingGrid from './MovingGrid';
+import { MotionFlex } from './Motion';
+import { playerBoxAnim } from '@/lib/variants';
 
 const Player = () => {
   const [onDuration, onSetDuration] = useState<number>(0);
@@ -18,8 +20,7 @@ const Player = () => {
     loadedSeconds: number;
   }>({ played: 0, playedSeconds: 0, loaded: 0, loadedSeconds: 0 });
   const [onMouseEnter, setOnMouseEnter] = useState<boolean>(false);
-
-  const controls = useAnimation();
+  const [element, controls] = useScroll();
 
   const handleMouseEnter = () => {
     setOnMouseEnter(true);
@@ -36,12 +37,15 @@ const Player = () => {
       margin="0 auto"
       width={customContainer}
       maxWidth="1011px"
-      // py={{ base: '3.5em', md: 'initial' }}
       padding={{ base: '3.5em 0', sm: '0 0 3.5em 0' }}
-      //  paddingBottom={{ sm: '3.5em' }}
       top={{ base: '10.5em', sm: '4.5em', md: 'initial' }}
+      ref={element}
     >
-      <Flex
+      <MotionFlex
+        animate={controls}
+        variants={playerBoxAnim}
+        visibility="hidden"
+        opacity={0}
         position="relative"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -73,8 +77,8 @@ const Player = () => {
           onDuration={(duration) => onSetDuration(duration)}
           playing={onPlaying}
           onProgress={(state) => setOnProgress(state)}
-          onPlay={() => controls.start('playing')}
-          onPause={() => controls.start('paused')}
+          //       onPlay={() => controls.start('playing')}
+          //      onPause={() => controls.start('paused')}
         />
         <PlayerButton
           duration={onDuration}
@@ -83,7 +87,7 @@ const Player = () => {
           onProgress={onProgress}
           onPlayerMouseEnter={onMouseEnter}
         />
-      </Flex>
+      </MotionFlex>
       <MovingGrid />
     </Box>
   );

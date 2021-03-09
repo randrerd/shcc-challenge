@@ -163,7 +163,7 @@ export const playerGridAnim = {
     visibility: 'visible',
     transition: {
       delayChildren: 0.6,
-      staggerChildren: 0.1,
+      staggerChildren: 0.2,
       staggerDirection: -1,
       duration: 1.75,
       ease: 'easeOut',
@@ -306,17 +306,19 @@ export const heartAnim = {
 
 //PLAYER ANIMATIONS
 
-export const playerOpacityAnim = {
-  playing: {
+export const playerBoxAnim = {
+  init: {
     opacity: 0,
+    visibility: 'hidden',
     transition: {
-      duration: 0.7,
+      duration: 0.2,
     },
   },
-  paused: {
-    opacity: 0.4,
+  final: {
+    opacity: 1,
+    visibility: 'visible',
     transition: {
-      duration: 0.7,
+      duration: 0.2,
     },
   },
 };
