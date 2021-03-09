@@ -175,7 +175,7 @@ export const playerGridItem1Anim = {
   init: {
     opacity: 1,
     maxWidth: '100%',
-    transtion: {
+    transition: {
       duration: 0.2,
     },
   },
@@ -192,8 +192,8 @@ export const playerGridItem2Anim = {
   init: {
     opacity: 1,
     maxWidth: '100%',
-    transtion: {
-      duration: 0.5,
+    transition: {
+      duration: 0.2,
     },
   },
   final: {
