@@ -11,17 +11,6 @@ const Picture = () => {
         gridColumn="1/-1"
         display="grid"
         gridTemplateColumns="repeat(30, 1fr)"
-        // gridTemplateRows={{
-        //   base: 'repeat(45, 0.75rem)',
-        //   sm: 'repeat(58,0.75rem)',
-        //   xl: 'repeat(52, 0.75rem)',
-        // }}
-
-        // gridTemplateRows={{
-        //   base: 'repeat(45, 2%)',
-        //   sm: 'repeat(58,2%)',
-        //   xl: 'repeat(52, 2%)',
-        // }}
         gridTemplateRows="repeat(52,2%)"
       >
         <WhiteUpperBox />
