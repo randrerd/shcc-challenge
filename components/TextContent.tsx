@@ -8,6 +8,7 @@ import {
 } from '@/lib/variants';
 import { Box, Flex, Heading, Stack, Text } from '@chakra-ui/react';
 import {
+  MotionBox,
   MotionFlex,
   MotionHeading,
   MotionHeart,
@@ -59,29 +60,30 @@ const TextContent = () => {
         initial="init"
         animate="final"
       >
-        <MotionHeading {...headingProps} variants={headingAnim}>
+        <MotionBox as="span" {...headingProps} variants={headingAnim}>
           L
-        </MotionHeading>
+        </MotionBox>
         <MotionHeart
           variants={heartAnim}
           fill="brand"
           fontSize={heartSize}
           width={{ base: '1.2em', xl: '1.4em' }}
         />
-        <MotionHeading
+        <MotionBox
+          as="span"
           ml={{ base: '0.75rem', xl: '2.35rem' }}
           mr={{ base: '0', xl: '2rem' }}
           {...headingProps}
           variants={headingAnim}
         >
           V
-        </MotionHeading>
-        <MotionHeading {...headingProps} variants={headingAnim}>
+        </MotionBox>
+        <MotionBox as="span" {...headingProps} variants={headingAnim}>
           E
-        </MotionHeading>
-        <MotionHeading {...headingProps} variants={headingAnim}>
+        </MotionBox>
+        <MotionBox as="span" {...headingProps} variants={headingAnim}>
           .
-        </MotionHeading>
+        </MotionBox>
       </MotionFlex>
       <Flex>
         <MotionStack
@@ -138,34 +140,38 @@ const TextContent = () => {
           position={{ base: 'absolute', md: 'initial' }}
           left={{ sm: '39%', md: 'initial' }}
         >
-          <MotionHeading
+          <MotionBox
+            as="span"
             {...headingProps}
             variants={headingAnim}
             letterSpacing="30px"
           >
             L
-          </MotionHeading>
-          <MotionHeading
+          </MotionBox>
+          <MotionBox
+            as="span"
             {...headingProps}
             variants={headingAnim}
             letterSpacing="30px"
           >
             .
-          </MotionHeading>
-          <MotionHeading
+          </MotionBox>
+          <MotionBox
+            as="span"
             {...headingProps}
             variants={headingAnim}
             letterSpacing="30px"
           >
             A
-          </MotionHeading>
-          <MotionHeading
+          </MotionBox>
+          <MotionBox
+            as="span"
             {...headingProps}
             variants={headingAnim}
             letterSpacing="30px"
           >
             .
-          </MotionHeading>
+          </MotionBox>
         </MotionFlex>
       </Flex>
     </Box>

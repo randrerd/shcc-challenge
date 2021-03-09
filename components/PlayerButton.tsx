@@ -6,7 +6,7 @@ import {
 import { Box, Circle, Text } from '@chakra-ui/layout';
 import { CircularProgress } from '@chakra-ui/progress';
 import { Dispatch, SetStateAction, useEffect, useState } from 'react';
-import { MotionCircle, MotionBox, MotionText } from './Motion';
+import { MotionCircle, MotionBox } from './Motion';
 import { useAnimation } from 'framer-motion';
 
 interface IProps {
@@ -53,8 +53,10 @@ const PlayerButton = (props: IProps) => {
   }, [onPlayerMouseEnter]);
 
   useEffect(() => {
+    //Gets the amount of degrees the "stick" is going to turn each time
     const degPerSecond = onProgress.playedSeconds / duration;
     if (onProgress.playedSeconds) {
+      //Gets the degree of the complete radius
       const totalDeg = degPerSecond * 360;
       setTrackingHandDeg(totalDeg + 89);
     }
