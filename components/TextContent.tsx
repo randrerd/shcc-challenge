@@ -85,16 +85,17 @@ const TextContent = () => {
       </MotionFlex>
       <Flex>
         <MotionStack
-          mt={{ base: '10em', md: '0' }}
-          width={{ base: '41%', md: '25%' }}
+          mt={{ base: '8.5em', md: '0' }}
+          width={{ base: '45%', md: '25%' }}
+          minWidth={{ base: '11em', md: 'initial' }}
           visibility="hidden"
           opacity="0"
           variants={textStackAnim}
           initial="init"
           animate="final"
-          background={{ sm: '#edf2f7b5', md: 'initial' }}
-          padding={{ sm: '1em', md: 'initial' }}
-          borderRadius={{ sm: '2px', md: 'initial' }}
+          background={{ base: '#edf2f7b5', md: 'initial' }}
+          padding={{ base: '1em', md: 'initial' }}
+          borderRadius={{ base: '2px', md: 'initial' }}
         >
           <Box>
             <Heading color="secondary" {...secondaryHeadingProps}>

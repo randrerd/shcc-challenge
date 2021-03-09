@@ -72,6 +72,7 @@ const Header = () => {
       color="gray.600"
       fontFamily="Roboto,-apple-system,Arial,sans-serif"
       fontSize="0.65rem"
+      textAlign="center"
     >
       <Flex
         display={{ base: 'none', md: 'flex' }}
@@ -84,7 +85,7 @@ const Header = () => {
       >
         <Breadcrumb alignItems="stretch" separator="|">
           <BreadcrumbItem>
-            <BreadcrumbLink>UK/GBP</BreadcrumbLink>
+            <BreadcrumbLink>UK/GBP (£)</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem>
             <BreadcrumbLink>STORES</BreadcrumbLink>
@@ -94,7 +95,7 @@ const Header = () => {
           </BreadcrumbItem>
         </Breadcrumb>
         <Text margin={{ base: '0 auto', md: 0 }} fontStyle="italic">
-          Enjoy free delivery on orders above $50
+          Enjoy free delivery on orders above £50
         </Text>
         <Breadcrumb
           display={{ base: 'none', md: 'flex' }}

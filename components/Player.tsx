@@ -6,6 +6,7 @@ import { MotionBox } from './Motion';
 import { useAnimation } from 'framer-motion';
 import { playerOpacityAnim } from '@/lib/variants';
 import { customContainer } from '@/styles/theme';
+import MovingGrid from './MovingGrid';
 
 const Player = () => {
   const [onDuration, onSetDuration] = useState<number>(0);
@@ -31,10 +32,14 @@ const Player = () => {
   return (
     <Box
       as="section"
+      position="relative"
       margin="0 auto"
       width={customContainer}
       maxWidth="1011px"
-      py={{ base: '3.5em', md: '0' }}
+      // py={{ base: '3.5em', md: 'initial' }}
+      padding={{ base: '3.5em 0', sm: '0 0 3.5em 0' }}
+      //  paddingBottom={{ sm: '3.5em' }}
+      top={{ base: '10.5em', sm: '4.5em', md: 'initial' }}
     >
       <Flex
         position="relative"
@@ -47,7 +52,7 @@ const Player = () => {
           base: 'initial',
           md: '1.4em',
         }}
-        right={{ xl: '8%' }}
+        right={{ md: '8%' }}
         margin="0 auto"
         _before={{
           content: '""',
@@ -79,6 +84,7 @@ const Player = () => {
           onPlayerMouseEnter={onMouseEnter}
         />
       </Flex>
+      <MovingGrid />
     </Box>
   );
 };

@@ -49,7 +49,7 @@ export const grayBoxAnim = {
     opacity: 0,
   },
   final: {
-    opacity: 1,
+    opacity: 0.55,
     width: '41%',
     marginLeft: '59%',
     transition: {
@@ -64,7 +64,7 @@ export const grayBoxAnimSm = {
     opacity: 0,
   },
   final: {
-    opacity: 1,
+    opacity: 0.55,
     width: '25%',
     marginLeft: '75%',
     transition: {
@@ -79,7 +79,7 @@ export const grayBoxAnimMd = {
     opacity: 0,
   },
   final: {
-    opacity: 1,
+    opacity: 0.55,
     width: '15%',
     marginLeft: '85%',
     transition: {
@@ -94,7 +94,7 @@ export const grayBoxAnimXl = {
     opacity: 0,
   },
   final: {
-    opacity: 1,
+    opacity: 0.55,
     visibility: 'visible',
     width: '15%',
     marginLeft: '85%',
@@ -148,6 +148,58 @@ export const bottomBoxAnimXl = {
     width: '30%',
     transition: {
       duration: 0.7,
+      ease: 'easeOut',
+    },
+  },
+};
+
+export const playerGridAnim = {
+  init: {
+    opacity: 0.15,
+    visibility: 'hidden',
+  },
+  final: {
+    opacity: 0.55,
+    visibility: 'visible',
+    transition: {
+      delayChildren: 0.6,
+      staggerChildren: 0.1,
+      staggerDirection: -1,
+      duration: 1.75,
+      ease: 'easeOut',
+    },
+  },
+};
+
+export const playerGridItem1Anim = {
+  init: {
+    opacity: 1,
+    maxWidth: '100%',
+    transtion: {
+      duration: 0.2,
+    },
+  },
+  final: {
+    maxWidth: '15%',
+    transition: {
+      duration: 1.4,
+      ease: 'easeOut',
+    },
+  },
+};
+
+export const playerGridItem2Anim = {
+  init: {
+    opacity: 1,
+    maxWidth: '100%',
+    transtion: {
+      duration: 0.5,
+    },
+  },
+  final: {
+    maxWidth: '0%',
+    transition: {
+      duration: 1.4,
       ease: 'easeOut',
     },
   },

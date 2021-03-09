@@ -32,7 +32,7 @@ const GrayBox = () => {
       position="absolute"
       opacity="0"
       zIndex="2"
-      gridRow={{ base: '11/14', xl: '16/19' }}
+      gridRow={{ base: '16/19', xl: '16/19' }}
       gridColumn="19"
       bg="gray.100"
       width="5em"

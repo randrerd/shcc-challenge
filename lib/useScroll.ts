@@ -9,9 +9,9 @@ const useScroll = (threshold: Threshold = 0.07) => {
   const controls = useAnimation();
 
   if (view) {
-    controls.start('show');
+    controls.start('final');
   } else {
-    controls.start('hidden');
+    controls.start('init');
   }
 
   return [element, controls] as const;

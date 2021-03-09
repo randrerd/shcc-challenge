@@ -29,7 +29,7 @@ const WhiteUpperBox = () => {
 
   return (
     <MotionBox
-      gridRow={{ base: '1/14', xl: '1/19' }}
+      gridRow={{ base: '1/19', xl: '1/19' }}
       gridColumn="19/-1"
       bg="white"
       minHeight="100%"
