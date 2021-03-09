@@ -133,13 +133,18 @@ const PlayerButton = (props: IProps) => {
           //      animate={itemControls}
         />
       </MotionBox>
-      <Box cursor="pointer" mt="14%" position="absolute" overflow="hidden">
+      <Box
+        cursor="pointer"
+        mt={{ base: '25%', '2xl': '14%' }}
+        position="absolute"
+        overflow="hidden"
+      >
         <Text
           color="white"
           fontSize="0.85em"
           letterSpacing="1.25px"
           transform={!onUserPaused ? 'translateY(25px)' : 'translateY(0)'}
-          transition="all 0.3s ease-out"
+          transition="all 0.2s ease-out"
           onClick={handlePlay}
         >
           RESUME
