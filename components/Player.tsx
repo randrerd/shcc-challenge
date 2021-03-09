@@ -46,15 +46,12 @@ const Player = () => {
         bottom={{
           base: 'initial',
           md: '1.4em',
-          // lg: '4.5em',
-          //xl: '4.5em',
-          //'2xl': '1.5em',
         }}
         right={{ xl: '8%' }}
         margin="0 auto"
         _before={{
           content: '""',
-          background: 'gray.700',
+          background: 'black',
           opacity: !onPlaying ? 0.4 : 0,
           position: 'absolute',
           transition: 'all 0.7s ease',

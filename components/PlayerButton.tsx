@@ -56,7 +56,7 @@ const PlayerButton = (props: IProps) => {
     const degPerSecond = onProgress.playedSeconds / duration;
     if (onProgress.playedSeconds) {
       const totalDeg = degPerSecond * 360;
-      setTrackingHandDeg(totalDeg + 88.5);
+      setTrackingHandDeg(totalDeg + 89);
     }
     return () => setTrackingHandDeg(0);
   }, [onProgress.playedSeconds]);
@@ -78,13 +78,13 @@ const PlayerButton = (props: IProps) => {
           opacity={onUserPaused ? 1 : 0}
           position="absolute"
           right="50%"
-          width="42px"
-          height="0.15em"
+          width="48px"
+          height="2.15px"
           background="brand"
           transform={
             !onPlaying ? `rotate(${trackingHandDeg}deg)` : 'rotate(90deg)'
           }
-          transition="all 0.45s ease-out"
+          transition="all 0.49s ease-out"
           transformOrigin="100%"
         />
         <CircularProgress
@@ -94,9 +94,9 @@ const PlayerButton = (props: IProps) => {
           min={0}
           max={duration}
           value={onUserPaused ? onProgress.playedSeconds : 0}
-          thickness="3px"
-          size="100px"
-          transition="all 0.5s ease-out"
+          thickness="1.85px"
+          size="115px"
+          transition="all 0.45s ease-out"
         />
         <MotionCircle
           variants={outerCircleAnim}
