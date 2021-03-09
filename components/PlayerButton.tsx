@@ -135,7 +135,8 @@ const PlayerButton = (props: IProps) => {
       </MotionBox>
       <Box
         cursor="pointer"
-        mt={{ base: '25%', '2xl': '14%' }}
+        // mt={{ base: '30%', '2xl': '14%' }}
+        bottom={'15.5%'}
         position="absolute"
         overflow="hidden"
       >

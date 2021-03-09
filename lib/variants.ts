@@ -231,7 +231,7 @@ export const heartAnim = {
     transition: {
       y: { duration: 0.75, type: 'tween' },
       fill: {
-        repeat: 1,
+        repeat: 2,
         repeatType: 'loop',
         repeatDelay: 1.8,
         times: [0, 0.02, 0.04, 0.8, 0.82, 0.84, 0.86, 0.88, 0.9],
@@ -240,7 +240,7 @@ export const heartAnim = {
         type: 'spring',
       },
       x: {
-        repeat: 1,
+        repeat: 2,
         repeatType: 'loop',
         repeatDelay: 1.8,
         times: [0, 0.02, 0.04, 0.8, 0.82, 0.84, 0.86, 0.88, 0.9],

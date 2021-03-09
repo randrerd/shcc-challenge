@@ -6,7 +6,7 @@ const breakpoints = createBreakpoints({
   md: '48em',
   lg: '62em',
   xl: '82em',
-  '2xl': '96em',
+  '2xl': '105em',
 });
 
 const fonts = { body: `"Heroic Condensed",-apple-system,Arial,sans-serif` };

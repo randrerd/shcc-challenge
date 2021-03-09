@@ -43,7 +43,13 @@ const Player = () => {
         alignItems="center"
         justifyContent="center"
         maxWidth="637px"
-        bottom={{ base: 'initial', md: '8.5em', xl: '2.5em' }}
+        bottom={{
+          base: 'initial',
+          md: '1.4em',
+          // lg: '4.5em',
+          //xl: '4.5em',
+          //'2xl': '1.5em',
+        }}
         right={{ xl: '8%' }}
         margin="0 auto"
         _before={{
