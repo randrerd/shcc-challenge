@@ -12,7 +12,7 @@ const Main = () => {
       pt="2.5em"
       width={customContainer}
       maxWidth="1011px"
-      minHeight={{ base: '50vh', md: '80vh', xl: '95vh' }}
+      minHeight={{ base: '50vh', md: '80vh', xl: '95vh', '2xl': 'initial' }}
       margin="0 auto"
     >
       <TextContent />
