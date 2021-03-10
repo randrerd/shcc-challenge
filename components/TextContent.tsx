@@ -54,7 +54,7 @@ const TextContent = () => {
         </MotionText>
       </Box>
       <MotionFlex
-        ml={{ base: '-10px', md: '-16px' }}
+        ml={{ base: '-6px', lg: '-16px' }}
         align="center"
         visibility="hidden"
         opacity="0"
