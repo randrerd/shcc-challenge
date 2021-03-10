@@ -1,9 +1,16 @@
 import { Box, Image } from '@chakra-ui/react';
+import { useState } from 'react';
 import GrayBox from './GrayBox';
 import WhiteBottomBox from './WhiteBottomBox';
 import WhiteUpperBox from './WhiteUpperBox';
 
 const Picture = () => {
+  const [onChangeOpacity, setOnChangeOpacity] = useState<boolean>(false);
+
+  setTimeout(() => {
+    setOnChangeOpacity(true);
+  }, 400);
+
   return (
     <>
       <Box
@@ -21,6 +28,8 @@ const Picture = () => {
           gridRow="1"
           ml="auto"
           src="/assets/images/tommy-denim__header-men.jpg"
+          opacity={!onChangeOpacity ? '0' : '1'}
+          style={{ transition: 'opacity 0.25s ease-out' }}
           alt=""
         />
         <Image
@@ -31,6 +40,8 @@ const Picture = () => {
           zIndex={{ base: '1', lg: '3' }}
           display={{ base: 'none', lg: 'block' }}
           src="/assets/images/guy_arm.png"
+          opacity={!onChangeOpacity ? '0' : '1'}
+          style={{ transition: 'opacity 0.25s ease-out' }}
           alt=""
         />
         <WhiteBottomBox />

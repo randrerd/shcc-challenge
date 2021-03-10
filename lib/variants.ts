@@ -5,7 +5,7 @@ export const upperBoxAnimXl = {
   final: {
     marginLeft: '85%',
     transition: {
-      duration: 0.7,
+      duration: 1,
       ease: 'easeOut',
       delay: 0.3,
     },
@@ -17,7 +17,7 @@ export const upperBoxAnimMd = {
   final: {
     marginLeft: '85%',
     transition: {
-      duration: 0.7,
+      duration: 1,
       ease: 'easeOut',
       delay: 0.3,
     },
@@ -29,7 +29,7 @@ export const upperBoxAnimSm = {
   final: {
     marginLeft: '75%',
     transition: {
-      duration: 0.7,
+      duration: 1,
       ease: 'easeOut',
       delay: 0.3,
     },
@@ -41,7 +41,7 @@ export const upperBoxAnim = {
   final: {
     marginLeft: '59%',
     transition: {
-      duration: 0.7,
+      duration: 1,
       ease: 'easeOut',
       delay: 0.3,
     },
@@ -57,7 +57,7 @@ export const grayBoxAnim = {
     width: '41%',
     marginLeft: '59%',
     transition: {
-      duration: 0.7,
+      duration: 1,
       ease: 'easeOut',
       delay: 0.3,
     },
@@ -73,7 +73,7 @@ export const grayBoxAnimSm = {
     width: '25%',
     marginLeft: '75%',
     transition: {
-      duration: 0.7,
+      duration: 1,
       ease: 'easeOut',
       delay: 0.3,
     },
@@ -89,7 +89,7 @@ export const grayBoxAnimMd = {
     width: '15%',
     marginLeft: '85%',
     transition: {
-      duration: 0.7,
+      duration: 1,
       ease: 'easeOut',
       delay: 0.3,
     },
@@ -106,7 +106,7 @@ export const grayBoxAnimXl = {
     width: '15%',
     marginLeft: '85%',
     transition: {
-      duration: 0.7,
+      duration: 1,
       ease: 'easeOut',
       delay: 0.3,
     },
@@ -119,7 +119,7 @@ export const bottomBoxAnim = {
     marginLeft: '47%',
     width: '63%',
     transition: {
-      duration: 0.7,
+      duration: 1,
       ease: 'easeOut',
       delay: 0.3,
     },
@@ -132,7 +132,7 @@ export const bottomBoxAnimSm = {
     marginLeft: '100%',
     width: '30%',
     transition: {
-      duration: 0.7,
+      duration: 1,
       ease: 'easeOut',
       delay: 0.3,
     },
@@ -145,7 +145,7 @@ export const bottomBoxAnimMd = {
     marginLeft: '100%',
     width: '30%',
     transition: {
-      duration: 0.7,
+      duration: 1,
       ease: 'easeOut',
       delay: 0.3,
     },
@@ -158,61 +158,9 @@ export const bottomBoxAnimXl = {
     marginLeft: '100%',
     width: '30%',
     transition: {
-      duration: 0.7,
+      duration: 1,
       ease: 'easeOut',
       delay: 0.3,
-    },
-  },
-};
-
-export const playerGridAnim = {
-  init: {
-    opacity: 0.15,
-    visibility: 'hidden',
-  },
-  final: {
-    opacity: 0.55,
-    visibility: 'visible',
-    transition: {
-      delayChildren: 0.6,
-      staggerChildren: 0.2,
-      staggerDirection: -1,
-      duration: 1.75,
-      ease: 'easeOut',
-    },
-  },
-};
-
-export const playerGridItem1Anim = {
-  init: {
-    opacity: 1,
-    scaleX: 1,
-    transition: {
-      duration: 0.2,
-    },
-  },
-  final: {
-    scaleX: 0.15,
-    transition: {
-      duration: 1.4,
-      ease: 'easeOut',
-    },
-  },
-};
-
-export const playerGridItem2Anim = {
-  init: {
-    opacity: 1,
-    scaleX: 1,
-    transition: {
-      duration: 0.2,
-    },
-  },
-  final: {
-    scaleX: 0,
-    transition: {
-      duration: 1.4,
-      ease: 'easeOut',
     },
   },
 };
