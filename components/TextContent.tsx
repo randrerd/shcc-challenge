@@ -54,7 +54,7 @@ const TextContent = () => {
         </MotionText>
       </Box>
       <MotionFlex
-        ml={{ base: '-10px', md: '-11px' }}
+        ml={{ base: '-10px', md: '-16px' }}
         align="center"
         visibility="hidden"
         opacity="0"
@@ -73,7 +73,7 @@ const TextContent = () => {
         />
         <MotionBox
           as="span"
-          ml={{ base: '1.25rem', lg: '2.18rem', xl: '1.45rem' }}
+          ml={{ base: '1.25rem', lg: '2.48rem', xl: '1.7rem' }}
           mr={{ base: '0', xl: '2rem' }}
           {...headingProps}
           variants={headingAnim}

@@ -221,7 +221,7 @@ export const playerGridItem2Anim = {
 
 export const textAnim = {
   init: { y: 100, opacity: 0 },
-  final: { y: 0, opacity: 1, transition: { delay: 0.35, duration: 1 } },
+  final: { y: 0, opacity: 1, transition: { delay: 0.55, duration: 1 } },
 };
 
 export const textStackAnim = {
@@ -232,8 +232,7 @@ export const textStackAnim = {
     transition: {
       duration: 1.4,
       ease: 'easeOut',
-      delay: 0.4,
-      type: 'tween',
+      delay: 0.5,
     },
   },
 };
@@ -245,10 +244,10 @@ export const headingListAnim = {
     opacity: 1,
     transition: {
       delayChildren: 0.3,
-      staggerChildren: 0.1,
-      delay: 0.4,
+      staggerChildren: 0.15,
+      delay: 0.6,
       ease: 'easeOut',
-      // duration: 1.2,
+      duration: 0.4,
     },
   },
 };
@@ -259,7 +258,7 @@ export const bottomHeadingListAnim = {
     visibility: 'visible',
     opacity: 1,
     transition: {
-      delayChildren: 0.65,
+      delayChildren: 0.85,
       staggerChildren: 0.1,
       // duration: 2.2,
     },
@@ -275,7 +274,7 @@ export const headingAnim = {
     opacity: 1,
     y: 0,
     transition: {
-      y: { duration: 1.25, type: 'tween', delay: 0.3, ease: 'easeOut' },
+      y: { duration: 1.25, type: 'tween', delay: 0.65, ease: 'easeOut' },
     },
   },
 };
@@ -298,7 +297,7 @@ export const heartAnim = {
     ],
     x: [0, 10, 0, 0, 0, 10, 0, 10, 0],
     transition: {
-      delay: 0.3,
+      delay: 0.65,
       //     ease: 'easeOut',
 
       y: { duration: 1.25, type: 'tween', ease: 'easeOut' },
