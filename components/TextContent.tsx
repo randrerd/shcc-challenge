@@ -16,12 +16,12 @@ import {
   MotionText,
 } from './Motion';
 
-const heartSize = { base: '5.5rem', xl: '12rem' };
+const heartSize = { base: '5.5rem', lg: '12rem' };
 
 const headingProps = {
-  fontSize: { base: '8rem', xl: '16rem' },
+  fontSize: { base: '8rem', lg: '16rem' },
   lineHeight: 0.9,
-  letterSpacing: { base: '10px', xl: '35px' },
+  letterSpacing: { base: '10px', lg: '35px' },
 };
 
 const secondaryHeadingProps = {
