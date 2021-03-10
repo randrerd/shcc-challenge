@@ -1,37 +1,45 @@
-import { MotionBox } from './Motion';
-import {
-  playerGridAnim,
-  playerGridItem1Anim,
-  playerGridItem2Anim,
-} from '@/lib/variants';
-import useScroll from '@/lib/useScroll';
+import { useInView } from 'react-intersection-observer';
+
+import { Box, Flex } from '@chakra-ui/layout';
 
 const MovingGrid = () => {
-  const [element, controls] = useScroll();
+  const [element, view] = useInView({ threshold: 0.9 });
 
   return (
-    <MotionBox
+    <Flex
+      flexDirection="column"
       top="8%"
       width={{ base: '100%', md: '85%' }}
       background="gray.200"
-      opacity="0.05"
+      opacity="0.55"
       position="absolute"
       zIndex="-1"
-      variants={playerGridAnim}
-      animate={controls}
       ref={element}
     >
-      <MotionBox
+      <Box
+        width="100%"
         paddingY="1.5em"
         background="white"
-        variants={playerGridItem1Anim}
+        transformOrigin="0% 0%"
+        opacity={view ? '1' : '0'}
+        transform={view ? 'scaleX(0.15)' : 'initial'}
+        transitionDuration="1.2s"
+        transitionProperty="transform"
+        style={{ transitionDelay: '0.7s' }}
       />
-      <MotionBox
+      <Box
+        width="100%"
         paddingY="7em"
         background="white"
-        variants={playerGridItem2Anim}
+        opacity={view ? '1' : '0'}
+        transformOrigin="0% 0%"
+        //    variants={playerGridItem2Anim}
+        transform={view ? 'scaleX(0)' : 'initial'}
+        transitionDuration="1.4s"
+        transitionProperty="transform"
+        style={{ transitionDelay: '0.6s' }}
       />
-    </MotionBox>
+    </Flex>
   );
 };
 
