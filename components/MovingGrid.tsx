@@ -3,7 +3,7 @@ import { useInView } from 'react-intersection-observer';
 import { Box, Flex } from '@chakra-ui/layout';
 
 const MovingGrid = () => {
-  const [element, view] = useInView({ threshold: 0.9 });
+  const [element, view] = useInView({ threshold: 0.2 });
 
   return (
     <Flex
@@ -33,7 +33,6 @@ const MovingGrid = () => {
         background="white"
         opacity={view ? '1' : '0'}
         transformOrigin="0% 0%"
-        //    variants={playerGridItem2Anim}
         transform={view ? 'scaleX(0)' : 'initial'}
         transitionDuration="1.4s"
         transitionProperty="transform"
