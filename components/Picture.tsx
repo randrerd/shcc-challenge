@@ -28,8 +28,8 @@ const Picture = () => {
           gridRow="1"
           gridColumn="13 / span 4"
           paddingTop="109%"
-          zIndex={{ base: '1', xl: '3' }}
-          display={{ base: 'none', xl: 'block' }}
+          zIndex={{ base: '1', lg: '3' }}
+          display={{ base: 'none', lg: 'block' }}
           src="/assets/images/guy_arm.png"
           alt=""
         />
