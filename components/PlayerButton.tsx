@@ -120,7 +120,7 @@ const PlayerButton = (props: IProps) => {
           height="35px"
           background="brand"
           color="white"
-          fontSize="0.35rem"
+          fontSize={{ base: '0.7rem', md: '0.35rem' }}
           zIndex="3"
         >
           {!onPlaying ? '►' : '❚❚'}

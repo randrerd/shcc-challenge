@@ -22,7 +22,7 @@ const headingProps = {
   fontSize: { base: '8rem', lg: '16rem' },
   lineHeight: 0.9,
   letterSpacing: { base: '10px', md: '30px', lg: '80px', xl: '35px' },
-  fontWeight: 800,
+  fontWeight: 700,
 };
 
 const secondaryHeadingProps = {
@@ -73,7 +73,7 @@ const TextContent = () => {
         />
         <MotionBox
           as="span"
-          ml={{ base: '1.25rem', lg: '2.18rem', xl: '1.7rem' }}
+          ml={{ base: '1.25rem', lg: '2.18rem', xl: '1.45rem' }}
           mr={{ base: '0', xl: '2rem' }}
           {...headingProps}
           variants={headingAnim}
@@ -132,7 +132,7 @@ const TextContent = () => {
         </MotionStack>
 
         <MotionFlex
-          ml={{ base: '5.5em', lg: '9em' }}
+          ml={{ base: '5.5em', lg: '8.75em' }}
           mt={{ base: 0, xl: '-20px' }}
           visibility="hidden"
           opacity="0"
