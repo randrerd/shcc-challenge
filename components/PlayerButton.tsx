@@ -75,6 +75,7 @@ const PlayerButton = (props: IProps) => {
         whileHover="hover"
         animate={componentControls}
         onClick={handlePlay}
+        aria-label={!onPlaying ? 'Play video' : 'Pause video'}
       >
         <Box
           opacity={onUserPaused ? 1 : 0}

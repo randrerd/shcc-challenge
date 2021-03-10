@@ -21,6 +21,7 @@ const Picture = () => {
           gridRow="1"
           ml="auto"
           src="/assets/images/tommy-denim__header-men.jpg"
+          alt=""
         />
         <Image
           position="absolute"
@@ -30,6 +31,7 @@ const Picture = () => {
           zIndex={{ base: '1', xl: '3' }}
           display={{ base: 'none', xl: 'block' }}
           src="/assets/images/guy_arm.png"
+          alt=""
         />
         <WhiteBottomBox />
       </Box>
