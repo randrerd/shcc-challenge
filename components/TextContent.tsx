@@ -16,10 +16,10 @@ import {
   MotionText,
 } from './Motion';
 
-const heartSize = { base: '5.8rem', lg: '12.25rem' };
+const heartSize = { base: '5.8rem', sm: '8.5rem', lg: '12.25rem' };
 
 const headingProps = {
-  fontSize: { base: '8rem', lg: '16rem' },
+  fontSize: { base: '8rem', sm: '13rem', md: '14rem', lg: '16rem' },
   lineHeight: 0.9,
   letterSpacing: { base: '10px', md: '30px', lg: '80px', xl: '35px' },
   fontWeight: 700,
@@ -54,7 +54,7 @@ const TextContent = () => {
         </MotionText>
       </Box>
       <MotionFlex
-        ml={{ base: '-6px', lg: '-16px' }}
+        ml={{ base: '-6px', sm: '-11px', lg: '-16px' }}
         align="center"
         visibility="hidden"
         opacity="0"
@@ -73,7 +73,12 @@ const TextContent = () => {
         />
         <MotionBox
           as="span"
-          ml={{ base: '1.25rem', lg: '2.48rem', xl: '1.7rem' }}
+          ml={{
+            base: '1.25rem',
+            lg: '2.48rem',
+            xl: '1.7rem',
+            '2xl': '2.48rem',
+          }}
           mr={{ base: '0', xl: '2rem' }}
           {...headingProps}
           variants={headingAnim}
@@ -132,7 +137,7 @@ const TextContent = () => {
         </MotionStack>
 
         <MotionFlex
-          ml={{ base: '5.5em', lg: '8.75em' }}
+          ml={{ base: '5.5em', sm: '15em', md: '5.5em', lg: '8.75em' }}
           mt={{ base: 0, xl: '-20px' }}
           visibility="hidden"
           opacity="0"
@@ -140,7 +145,7 @@ const TextContent = () => {
           initial="init"
           animate="final"
           position={{ base: 'absolute', md: 'initial' }}
-          left={{ sm: '39%', md: 'initial' }}
+          //    left={{ sm: '17%', md: 'initial' }}
         >
           <MotionBox
             as="span"
