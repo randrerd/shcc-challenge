@@ -141,7 +141,13 @@ const TextContent = () => {
         </MotionStack>
 
         <MotionFlex
-          ml={{ base: '5.5em', sm: '15em', md: '5.5em', lg: '8.75em' }}
+          ml={{
+            base: '5.5em',
+            sm: '15em',
+            md: '5.5em',
+            lg: '9.25em',
+            xl: '8.75em',
+          }}
           mt={{ base: 0, xl: '-20px' }}
           visibility="hidden"
           opacity="0"
