@@ -7,6 +7,7 @@ export const upperBoxAnimXl = {
     transition: {
       duration: 0.7,
       ease: 'easeOut',
+      delay: 0.3,
     },
   },
 };
@@ -18,6 +19,7 @@ export const upperBoxAnimMd = {
     transition: {
       duration: 0.7,
       ease: 'easeOut',
+      delay: 0.3,
     },
   },
 };
@@ -29,6 +31,7 @@ export const upperBoxAnimSm = {
     transition: {
       duration: 0.7,
       ease: 'easeOut',
+      delay: 0.3,
     },
   },
 };
@@ -40,6 +43,7 @@ export const upperBoxAnim = {
     transition: {
       duration: 0.7,
       ease: 'easeOut',
+      delay: 0.3,
     },
   },
 };
@@ -55,6 +59,7 @@ export const grayBoxAnim = {
     transition: {
       duration: 0.7,
       ease: 'easeOut',
+      delay: 0.3,
     },
   },
 };
@@ -70,6 +75,7 @@ export const grayBoxAnimSm = {
     transition: {
       duration: 0.7,
       ease: 'easeOut',
+      delay: 0.3,
     },
   },
 };
@@ -85,6 +91,7 @@ export const grayBoxAnimMd = {
     transition: {
       duration: 0.7,
       ease: 'easeOut',
+      delay: 0.3,
     },
   },
 };
@@ -101,6 +108,7 @@ export const grayBoxAnimXl = {
     transition: {
       duration: 0.7,
       ease: 'easeOut',
+      delay: 0.3,
     },
   },
 };
@@ -113,6 +121,7 @@ export const bottomBoxAnim = {
     transition: {
       duration: 0.7,
       ease: 'easeOut',
+      delay: 0.3,
     },
   },
 };
@@ -125,6 +134,7 @@ export const bottomBoxAnimSm = {
     transition: {
       duration: 0.7,
       ease: 'easeOut',
+      delay: 0.3,
     },
   },
 };
@@ -137,6 +147,7 @@ export const bottomBoxAnimMd = {
     transition: {
       duration: 0.7,
       ease: 'easeOut',
+      delay: 0.3,
     },
   },
 };
@@ -149,6 +160,7 @@ export const bottomBoxAnimXl = {
     transition: {
       duration: 0.7,
       ease: 'easeOut',
+      delay: 0.3,
     },
   },
 };
@@ -209,7 +221,7 @@ export const playerGridItem2Anim = {
 
 export const textAnim = {
   init: { y: 100, opacity: 0 },
-  final: { y: 0, opacity: 1, transition: { delay: 0.6, duration: 1 } },
+  final: { y: 0, opacity: 1, transition: { delay: 0.65, duration: 1 } },
 };
 
 export const textStackAnim = {
@@ -218,9 +230,9 @@ export const textStackAnim = {
     opacity: 1,
     visibility: 'visible',
     transition: {
-      duration: 0.7,
+      duration: 1,
       ease: 'easeOut',
-      delay: 0.05,
+      delay: 0.4,
     },
   },
 };
@@ -259,7 +271,7 @@ export const headingAnim = {
   final: {
     opacity: 1,
     y: 0,
-    transition: { y: { duration: 0.75, type: 'tween' } },
+    transition: { y: { duration: 0.75, type: 'tween', delay: 0.3 } },
   },
 };
 
@@ -281,6 +293,8 @@ export const heartAnim = {
     ],
     x: [0, 10, 0, 0, 0, 10, 0, 10, 0],
     transition: {
+      delay: 0.3,
+
       y: { duration: 0.75, type: 'tween' },
       fill: {
         repeat: 2,
