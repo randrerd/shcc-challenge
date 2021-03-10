@@ -10,13 +10,17 @@ import { Box, Flex, Heading, Stack, Text } from '@chakra-ui/react';
 import {
   MotionBox,
   MotionFlex,
-  MotionHeading,
   MotionHeart,
   MotionStack,
   MotionText,
 } from './Motion';
 
-const heartSize = { base: '5.8rem', sm: '8.5rem', lg: '12.25rem' };
+const heartSize = {
+  base: '5.8rem',
+  sm: '8.5rem',
+  md: '9.5rem',
+  lg: '12.25rem',
+};
 
 const headingProps = {
   fontSize: { base: '8rem', sm: '13rem', md: '14rem', lg: '16rem' },
