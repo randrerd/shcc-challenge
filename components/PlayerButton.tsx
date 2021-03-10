@@ -8,6 +8,7 @@ import { CircularProgress } from '@chakra-ui/progress';
 import { Dispatch, SetStateAction, useEffect, useState } from 'react';
 import { MotionCircle, MotionBox } from './Motion';
 import { useAnimation } from 'framer-motion';
+import { Pause, Play } from '@/styles/icons';
 
 interface IProps {
   duration: number;
@@ -120,10 +121,10 @@ const PlayerButton = (props: IProps) => {
           height="35px"
           background="brand"
           color="white"
-          fontSize={{ base: '0.7rem', md: '0.35rem' }}
+          fontSize={{ base: '0.5rem', md: '0.35rem' }}
           zIndex="3"
         >
-          {!onPlaying ? '►' : '❚❚'}
+          {!onPlaying ? <Play /> : <Pause />}
         </Circle>
         <MotionCircle
           variants={transparentCircleAnim}
