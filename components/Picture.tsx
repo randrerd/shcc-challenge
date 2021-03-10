@@ -29,7 +29,7 @@ const Picture = () => {
           ml="auto"
           src="/assets/images/tommy-denim__header-men.jpg"
           opacity={!onChangeOpacity ? '0' : '1'}
-          style={{ transition: 'opacity 0.25s ease-out' }}
+          style={{ transition: 'opacity 0.45s ease-out' }}
           alt=""
         />
         <Image
@@ -41,7 +41,7 @@ const Picture = () => {
           display={{ base: 'none', lg: 'block' }}
           src="/assets/images/guy_arm.png"
           opacity={!onChangeOpacity ? '0' : '1'}
-          style={{ transition: 'opacity 0.25s ease-out' }}
+          style={{ transition: 'opacity 0.45s ease-out' }}
           alt=""
         />
         <WhiteBottomBox />
