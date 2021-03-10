@@ -221,7 +221,7 @@ export const playerGridItem2Anim = {
 
 export const textAnim = {
   init: { y: 100, opacity: 0 },
-  final: { y: 0, opacity: 1, transition: { delay: 0.65, duration: 1 } },
+  final: { y: 0, opacity: 1, transition: { delay: 0.35, duration: 1 } },
 };
 
 export const textStackAnim = {
@@ -230,9 +230,10 @@ export const textStackAnim = {
     opacity: 1,
     visibility: 'visible',
     transition: {
-      duration: 1,
+      duration: 1.4,
       ease: 'easeOut',
       delay: 0.4,
+      type: 'tween',
     },
   },
 };
@@ -245,7 +246,9 @@ export const headingListAnim = {
     transition: {
       delayChildren: 0.3,
       staggerChildren: 0.1,
-      // duration: 2.2,
+      delay: 0.4,
+      ease: 'easeOut',
+      // duration: 1.2,
     },
   },
 };
@@ -271,7 +274,9 @@ export const headingAnim = {
   final: {
     opacity: 1,
     y: 0,
-    transition: { y: { duration: 0.75, type: 'tween', delay: 0.3 } },
+    transition: {
+      y: { duration: 1.25, type: 'tween', delay: 0.3, ease: 'easeOut' },
+    },
   },
 };
 
@@ -294,15 +299,16 @@ export const heartAnim = {
     x: [0, 10, 0, 0, 0, 10, 0, 10, 0],
     transition: {
       delay: 0.3,
+      //     ease: 'easeOut',
 
-      y: { duration: 0.75, type: 'tween' },
+      y: { duration: 1.25, type: 'tween', ease: 'easeOut' },
       fill: {
         repeat: 2,
         repeatType: 'loop',
         repeatDelay: 1.8,
         times: [0, 0.02, 0.04, 0.8, 0.82, 0.84, 0.86, 0.88, 0.9],
         duration: 2.8,
-        delay: 1.55,
+        delay: 1.3,
         type: 'spring',
       },
       x: {
@@ -311,7 +317,7 @@ export const heartAnim = {
         repeatDelay: 1.8,
         times: [0, 0.02, 0.04, 0.8, 0.82, 0.84, 0.86, 0.88, 0.9],
         duration: 2.8,
-        delay: 1.55,
+        delay: 1.3,
         type: 'spring',
       },
     },
