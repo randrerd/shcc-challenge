@@ -59,7 +59,7 @@ const PlayerButton = (props: IProps) => {
     if (onProgress.playedSeconds) {
       //Gets the degree of the complete radius
       const totalDeg = degPerSecond * 360;
-      setTrackingHandDeg(totalDeg + 89);
+      setTrackingHandDeg(totalDeg + 89.5);
     }
     return () => setTrackingHandDeg(0);
   }, [onProgress.playedSeconds]);
