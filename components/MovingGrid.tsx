@@ -23,7 +23,7 @@ const MovingGrid = () => {
         transformOrigin="0% 0%"
         opacity={view ? '1' : '0'}
         transform={view ? 'scaleX(0.15)' : 'initial'}
-        transitionDuration="1.4s"
+        transitionDuration={view ? '1.4s' : '0.2s'}
         transitionProperty="transform"
         style={{
           transitionDelay: '0.7s',
@@ -37,7 +37,7 @@ const MovingGrid = () => {
         opacity={view ? '1' : '0'}
         transformOrigin="0% 0%"
         transform={view ? 'scaleX(0)' : 'initial'}
-        transitionDuration="1.6s"
+        transitionDuration={view ? '1.6s' : '0.2s'}
         transitionProperty="transform"
         style={{
           transitionDelay: '0.6s',
